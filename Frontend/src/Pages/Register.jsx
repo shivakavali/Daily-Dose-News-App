@@ -31,7 +31,7 @@ const Register = ({ mode }) => {
   const Submit = async (e) => {
     e.preventDefault();
     try {
-      let response = await fetch("http://localhost:5000/user/Signup", {
+      let response = await fetch("https://dailydose.onrender.com/user/Signup", {
         method: "POST",
         headers: { "Content-type": "application/json" },
         body: JSON.stringify(user)
